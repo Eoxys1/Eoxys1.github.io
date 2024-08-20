@@ -1,12 +1,39 @@
 *{
- font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    margin: 100px;
+    padding: 50px;
+    text-align: center;
+    background-color: #e4e4e4;
 }
 
 header{
-background-color: #ffbd5b;
-position: sticky;
+    background-color: #c12143;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
 }
 
 footer{
-background-color: #83725a;
+    background-color: #be183c;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+h4{
+    align-self: center;
+}
+
+button{
+    float: right;
+    height: 50px;
+    width: 50px;
 }

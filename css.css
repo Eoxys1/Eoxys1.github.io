@@ -1,39 +1,93 @@
+/* Denna * nollställer alla margins och paddings samt sätter vilken still texte ska ha. */
 *{
     font-family: 'Times New Roman', Times, serif;
     padding: 0;
     margin: 0;
 }
 
-div{
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.center{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+}
+/* Här sätts  vilken färg, hur stora diven ska vara och var texten sitter i diven. */ 
+.div{
+    
     margin: 100px;
     padding: 50px;
     text-align: center;
     background-color: #e4e4e4;
-}
+    
+    }
 
+.color{
+        text-align: center;
+        background-color: #e4e4e4;
+    }
+
+/* 
+Här ädrar jag bakgrunds färg. 
+Position: sticky; får heddern att fastna till topen av hemsidan när man skrolar, top: 0; sätter att det inte ska finnas något mellanrum mellan topen av hemsidan och headern.
+Display: flex; detta sätter hur elementen inut i hedern kommer att agra med position och mot varandra.
+justify-content: space-between; Detta sätter en det ska finnas rum mellan elementen i min header, detta drar ut hela vägen till höger och vänster, samt sätter att mellanrumet mellan är lika stort beroende på hur många element man har.
+*/
 header{
     background-color: #c12143;
-    position: sticky;
-    top: 0;
+    top: 0px;
+    left: 0px;
+    position: fixed;   
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 5%;
+    width: 100%;
 }
 
+/* 
+Detta sätter att fottern hamnar på botten av mensidan samt ändrar färgen på backgrunden.
+Display: grid; skapar ett grid där man kan placera element.
+place-content: center; sätter alla element imon mitten av min grid.
+*/
 footer{
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #c12143;
+    display: grid;
+    place-content: center;
+    /*
     background-color: #be183c;
     height: 100px;
     position: absolute;
     bottom: 0;
     width: 100%;
-}
+    display: grid;
+    place-content: center;
+    */
 
-h4{
+    }
+
+/* ändrar så att all text i h3 hamnar i mitten. */
+h3{
     align-self: center;
+    width: 100%;
+       
 }
 
+/* sätter storleken på Button. */
 button{
-    float: right;
-    height: 50px;
+    height: 100%;
     width: 50px;
+}
+/* sätter vilken stil och var texten ska sitta. */
+.fotoertext{
+    text-align: center;
+    font-family:cursive;
 }

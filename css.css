@@ -52,7 +52,7 @@ Display: flex; detta sätter hur elementen inut i hedern kommer att agra med pos
 justify-content: space-between; Detta sätter en det ska finnas rum mellan elementen i min header, detta drar ut hela vägen till höger och vänster, samt sätter att mellanrumet mellan är lika stort beroende på hur många element man har.
 */
 header{
-    background-color: #c12143;
+    background-color: #36977f;
     top: 0px;
     left: 0px;
     position: fixed;   
@@ -63,7 +63,7 @@ header{
 }
 
 /* 
-Detta sätter att fottern hamnar på botten av mensidan samt ändrar färgen på backgrunden.
+Detta sätter att fottern hamnar på botten av mensidan samt ändrar färgen på backgrunden och texten.
 Display: grid; skapar ett grid där man kan placera element.
 place-content: center; sätter alla element imon mitten av min grid.
 */
@@ -73,9 +73,10 @@ footer{
     position: fixed;
     width: 100%;
     height: 100px;
-    background-color: #c12143;
+    background-color: #242424;
     display: grid;
     place-content: center;
+    color: #5c5c5c;
     /*
     background-color: #be183c;
     height: 100px;
@@ -104,4 +105,5 @@ button{
 .fotoertext{
     text-align: center;
     font-family:cursive;
+    
 }
